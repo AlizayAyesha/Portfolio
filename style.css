@@ -344,7 +344,9 @@ section {
         text-align: center; /* Center text */
     }
 }
-
+a {
+    text-decoration: none;
+}
 
 /* Mobile styles */
 @media (max-width: 768px) {
