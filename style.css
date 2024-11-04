@@ -985,7 +985,7 @@ footer p {
     footer {
         margin-top: 2000px; /* Add space below footer for small screens */
     }
-    #wave{
+    .footer-wave{
         display: none;
     }
     #projects-gallery {
@@ -997,7 +997,7 @@ footer p {
     footer {
         margin-top: 1500px; /* Add space below footer for medium small screens */
     }
- #wave{
+ .footer-wave{
         display: none;
     }
     #projects-gallery {
@@ -1009,7 +1009,7 @@ footer p {
     footer {
         margin-top: 1000px; /* Add space below footer for larger small screens */
     }
-    #wave{
+    .footer-wave {
         display: none;
     }
     #projects-gallery {
