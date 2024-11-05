@@ -1278,3 +1278,44 @@ button:hover {
         margin-top: 150vh; /* Apply 100vh top margin for smaller screens */
     }
 }
+
+.blog-section {
+    background-color: hsla(0, 0%, 0%, 0.466); /* Light background */
+    padding: 60px 20px;
+    text-align: center;
+    color: #ffffff; /* Dark text color */
+}
+
+.blog-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.blog-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.blog-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.blog-link {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1rem;
+    color: #000000;
+    background-color: #3affff; /* Medium's green */
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.blog-link:hover {
+    background-color: #64e6e6b0; /* Darker green on hover */
+}
