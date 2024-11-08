@@ -879,15 +879,16 @@ h2 {
     position: relative; /* Positioning context for labels */
 }
 
+
 .input-box input,
 .input-group-2 textarea {
-    background-color: #a09c9c;
+    background-color: #e6d9d9;
     color: #ffffff;
     width: 100%; /* Full width */
     padding: 15px; /* Padding inside the input */
     border: 2px solid #dddddd; /* Solid light border */
     border-radius: 5px; /* Rounded corners */
-    font-size: 1rem; /* Font size for inputs */
+    font-size: 0.8rem; /* Font size for inputs */
     transition: border-color 0.3s; /* Smooth transition for focus */
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Soft inner shadow for depth */
 }
@@ -929,9 +930,10 @@ h2 {
     
 
     .heading {
-        font-size: 1rem;
+        margin-bottom: 10%;
+        font-size: 2.5rem; /* Adjust heading size for mobile */
         text-align: center;
-        z-index: 1; /* Keep text above the image */
+        z-index: 1; /* Keep the heading above the background image */
     }
 
     .input-group,
@@ -1324,3 +1326,5 @@ a {
 .blog-link:hover {
     background-color: #64e6e6b0; /* Darker green on hover */
 }
+
+
