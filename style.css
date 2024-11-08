@@ -1198,28 +1198,33 @@ footer p {
     }
     
 }
-
-/* Base button styles */
+ /* Base button styles */
 button {
-    background-color: #55e7ec; /* Button background color */
+    display: inline-block;
+    text-decoration: none;
+    background-color: #3affff; /* Medium's green */
     color: #000; /* Button text color */
     border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    padding: 10px 20px; /* Button padding */
+    border-radius: 25px; /* Larger rounded corners */
+    padding: 12px 25px; /* Button padding similar to .blog-link */
     font-size: 1rem; /* Button font size */
     cursor: pointer; /* Pointer cursor */
-    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover */
-    width: 100%; /* Full width buttons */
-    max-width: 300px; /* Optional: Max width for larger screens */
+    transition: background-color 0.3s ease, transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover */
+    width: auto; /* Auto width, not full width */
     margin: auto; /* Centering */
-    margin-left: 3%;
+    margin-left: 3%; /* Offset for alignment */
+    max-width: 300px; /* Optional: Max width for larger screens */
 }
 
 /* Hover effect */
 button:hover {
-    background-color: #3affff; /* Change background color on hover */
+    background-color: #64e6e6b0; /* Darker shade on hover */
     transform: translateY(-2px); /* Slight lift effect on hover */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+a {
+    text-decoration: none;
 }
 .skills-section {
     margin-top: 70vh;
