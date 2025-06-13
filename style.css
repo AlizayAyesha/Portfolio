@@ -17,6 +17,10 @@ body {
     color: #fff;
 }
 
+.cv-btn {
+    margin-top: 16px;
+}
+
 /* Navigation styles */
 nav {
     width: 100%;
@@ -182,6 +186,7 @@ section {
 }
 
 .content {
+
     width: 50%;
     padding-right: 20px;
 }
@@ -325,7 +330,14 @@ section {
 }
 
 /* Media query for tablet screens */
+
+@media(min-width: 768px ){
+     div.content {
+            margin-left: 30px;
+    }
+}
 @media (max-width: 768px) {
+   
     .main-container {
         flex-direction: column; /* Stack content vertically */
         align-items: center; /* Center items */
@@ -636,18 +648,26 @@ section {
 
 /* Outer spheres styling */
 .outer-sphere {
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 225px;
     border-radius: 50%;
     background: linear-gradient(135deg, #76edf1, #010205);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px auto; /* Reduced margin */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
     color: #fff;
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
+}
+.outer-sphere h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 /* Title Styling */
 .about-text {
@@ -666,8 +686,10 @@ section {
 /* Flower Cards Styling */
 .timeline-items {
     display: flex;
+    gap: 32px;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 32px;
 }
 
 .flower-card {
@@ -679,17 +701,26 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-size: small;
     text-align: center;
-    box-shadow: 0px 4px 10px rgb(255, 255, 255);
+    -webkit-box-shadow: 0.5px -0.5px 11px 9.5px gray;
+    -moz-box-shadow: 0.5px -0.5px 11px 9.5px gray;
+    box-shadow: 0.5px -0.5px 11px 9.5px gray;
     transition: transform 0.3s;
+    padding: 16px;
 }
 
 .flower-card h4, .flower-card h5 {
     margin: 5px 0; /* Adjusted spacing for headings within flower cards */
 }
 
-
+.flower-card h4 {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+.flower-card p {
+  font-size: 10px;
+  line-height: 1.1rem;
+}
 /* Additional adjustment for each section to remove top/bottom padding */
  .education, .courses {
     padding-top: 10px; /* Optional */
@@ -698,12 +729,14 @@ section {
 
 
 .about-p{
-    font-size: 1.5rem;
-    font-weight: 700;
+     font-family: "Caveat", cursive;
+    
+    font-size: 32px; font-optical-sizing: auto;
+
 }
 /* General Section Styling */
 .services-section {
-    margin-bottom: 40vh;
+    margin-bottom: 20vh;
     display: grid;
     padding: 50px 20px;
     background-color: #00000096;
@@ -761,6 +794,7 @@ section {
     line-height: 1.5;
     text-align: center;
     max-width: 80%;
+    margin: auto;
 }
 
 /* Responsive Styles */
@@ -785,10 +819,12 @@ section {
     max-width: 800px; /* Limit width for readability */
     margin: 0 auto; /* Center the box */
 }
+.testimonials-box h2{
+    margin-bottom: 16px;
+}
 
 h2 {
     font-size: 3rem; /* Font size for the heading */
-    margin-bottom: 30px; /* Space below the heading */
     font-weight: bold; /* Make the heading bold */
 }
 
@@ -1228,10 +1264,10 @@ a {
     text-decoration: none;
 }
 .skills-section {
-    margin-top: 70vh;
+
     display: grid;
     text-align: center;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 .skills-container {
@@ -1315,7 +1351,7 @@ a {
     display: inline-block;
     padding: 12px 25px;
     font-size: 1rem;
-    color: #000000;
+    color: rgb(113, 101, 101);
     background-color: #3affff; /* Medium's green */
     border-radius: 25px;
     text-decoration: none;
