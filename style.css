@@ -733,81 +733,79 @@ section {
     
     font-size: 32px; font-optical-sizing: auto;
 
-}
-/* General Section Styling */
+}/* Services Section Styling */
 .services-section {
-    margin-bottom: 20vh;
-    display: grid;
-    padding: 50px 20px;
-    background-color: #00000096;
-    text-align: center; /* Center all text in this section */
+    padding: 100px 20px; /* Increased padding for spacing */
+    background: linear-gradient(135deg, #3aafff9c, #ffffff); /* Gradient background */
+    text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .services-title {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #ffffff;
-    margin-bottom: 30px; /* Space below the title */
+    font-size: 3rem;
+    color: #0d1b2a;
+    margin-bottom: 60px;
+    font-weight: 700;
 }
 
-/* Grid Layout */
 .services-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two-column layout */
-    gap: 2.5rem; /* Spacing between cards */
-    padding-top: 20px;
-}
-
-/* Card Styling */
-.service-box {
-    background-color: #3affff;
-    height: 300px;
-    border-radius: 3rem;
-    border: 5px solid transparent;
-    cursor: pointer;
-    transition: transform 0.4s ease-in-out, border-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
-    color: #010205;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    gap: 30px;
 }
 
-/* Hover Effect for Service Box */
+/* Individual Service Box */
+.service-box {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    width: 250px;
+    padding: 30px 20px;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
 .service-box:hover {
-    color: #010205;
-    border-color: #73f4f8;
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.2);
 }
 
-/* Service Content Styling */
-.service-box h4 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+/* Service Info */
+.service-info h4 {
+    font-size: 1.3rem;
+    color: #0077b6;
+    margin-bottom: 15px;
 }
 
-.service-box p {
-    font-size: 1rem;
+.service-info p {
+    font-size: 0.95rem;
+    color: #333;
     line-height: 1.5;
-    text-align: center;
-    max-width: 80%;
-    margin: auto;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
+/* Responsive */
+@media (max-width: 900px) {
     .services-container {
-        grid-template-columns: 1fr; 
-        
-
-    }
-    .services-section{
-        margin-bottom: 150%;
+        flex-direction: column;
+        align-items: center;
     }
 }
+.service-box:nth-child(1) { background: linear-gradient(135deg, #48eaff, #0d1b2a); } /* Cyan -> Dark blue */
+.service-box:nth-child(2) { background: linear-gradient(135deg, #55e7ec, #0077b6); } /* Light cyan -> Blue */
+.service-box:nth-child(3) { background: linear-gradient(135deg, #8e2de2, #4a00e0); } /* Purple gradient */
+.service-box:nth-child(4) { background: linear-gradient(135deg, #ff6ec7, #ff99c8); } /* Soft pink */
+.service-box:nth-child(5) { background: linear-gradient(135deg, #00c6ff, #0072ff); } /* Sky blue -> Darker blue */
+.service-box:nth-child(6) { background: linear-gradient(135deg, #00fff7, #48eaff); } /* Neon cyan gradient */
+.service-box:nth-child(7) { background: linear-gradient(135deg, #56ab2f, #a8e063); } /* Keep subtle green */
+.service-box:nth-child(8) { background: linear-gradient(135deg, #e0e0ff, #a8a8ff); } /* Soft pastel purple/light blue */
+
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 35px rgba(72, 234, 255, 0.7); /* Neon cyan glow */
+}
+
+
 
 .testimonials {
     background-color: #2a2a2a00; /* Dark background for contrast */
@@ -1301,6 +1299,10 @@ a {
     height: 10px;
     border-radius: 5px;
 }
+.skills-section {
+    padding-top: 150px; /* Push skills down */
+}
+
 
 .ts { width: 60%; background-color: #007ACC; }
 .nextjs { width: 60%; background-color: #ffffff; }
