@@ -1713,7 +1713,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 20px;
+    padding: 50px 20px;
     background: linear-gradient(135deg, rgba(58, 255, 255, 0.1), rgba(72, 234, 255, 0.05));
     border: 2px solid rgba(58, 255, 255, 0.2);
     border-radius: 20px;
@@ -1728,7 +1728,7 @@ a {
 
 .skill h3 {
     color: #3affff;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -1891,5 +1891,3 @@ a {
         width: 100%;
     }
 }
-
-
