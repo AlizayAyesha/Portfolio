@@ -830,7 +830,7 @@ section {
 
 /* Individual Service Box */
 .service-box {
-    background: #fff;
+    background: #0f0f0f;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     width: 250px;
@@ -852,7 +852,7 @@ section {
 
 .service-info p {
     font-size: 0.95rem;
-    color: #333;
+    color: #fcf6f6;
     line-height: 1.5;
 .flower-card p span {
     color: #48eaff;
