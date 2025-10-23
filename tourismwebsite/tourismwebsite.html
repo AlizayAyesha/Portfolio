@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakistan - Places Of Heaven</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: linear-gradient(90deg, #5db9cc 0%, #4fa8bb 25%, #3d9dae 50%, #67c9a5 75%, #5fc299 100%);
+            padding: 20px 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+        }
+
+        .logo {
+            font-size: 36px;
+            font-weight: bold;
+            color: white;
+            letter-spacing: 1px;
+            font-family: Arial, sans-serif;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-btn {
+            padding: 14px 40px;
+            background: transparent;
+            color: white;
+            border: 3px solid white;
+            border-radius: 35px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            letter-spacing: 1px;
+        }
+
+        .nav-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                        url('https://images.unsplash.com/photo-1570110704370-536c2c6d6b6e?q=80&w=2000') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 950px;
+            color: white;
+            margin-top: 60px;
+        }
+
+        .hero h1 {
+            font-size: 72px;
+            margin-bottom: 35px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+            font-family: Georgia, serif;
+        }
+
+        .hero p {
+            font-size: 21px;
+            line-height: 1.9;
+            margin-bottom: 45px;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+            font-family: Georgia, serif;
+            font-weight: 400;
+        }
+
+        .learn-more-btn {
+            padding: 16px 55px;
+            background: rgba(72, 190, 181, 0.85);
+            color: white;
+            border: 3px solid white;
+            border-radius: 35px;
+            font-size: 19px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            letter-spacing: 1px;
+        }
+
+        .learn-more-btn:hover {
+            background: rgba(72, 190, 181, 1);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            width: 28px;
+            height: 3px;
+            background: white;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 1024px) {
+            .nav-links {
+                position: fixed;
+                top: 85px;
+                right: -100%;
+                flex-direction: column;
+                background: linear-gradient(180deg, #5db9cc 0%, #4fa8bb 50%, #67c9a5 100%);
+                width: 100%;
+                padding: 40px;
+                transition: right 0.3s ease;
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 48px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            nav {
+                padding: 0 30px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .logo {
+                font-size: 28px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 15px;
+                line-height: 1.7;
+            }
+
+            .nav-btn {
+                padding: 12px 30px;
+                font-size: 15px;
+            }
+
+            .learn-more-btn {
+                padding: 14px 45px;
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Pakistan</div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-btn">HOME</a>
+                <a href="#" class="nav-btn">ABOUT</a>
+                <a href="#" class="nav-btn">GALLERY</a>
+                <a href="#" class="nav-btn">CONTACT</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Places Of Heaven</h1>
+            <p>
+                Pakistan boasts a remarkable array of stunning landscapes, 
+                from the towering peaks of the Himalayas, Karakoram, and 
+                Hindu Kush ranges to the vast deserts of Thar and Cholistan. 
+                The country's natural beauty encompasses breathtaking 
+                valleys like Hunza, Swat, and Kaghan, alongside enchanting 
+                lakes such as Saif-ul-Muluk and Attabad. With diverse 
+                ecosystems, including lush forests, pristine beaches along the 
+                Makran Coast, and the unique biodiversity of its national 
+                parks like Deosai and Hingol, Pakistan's beauty is truly 
+                unrivaled. While rankings vary, Pakistan's natural wonders 
+                consistently earn global recognition for their awe-inspiring 
+                beauty and cultural significance.
+            </p>
+            <a href="#" class="learn-more-btn">Learn More</a>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+
+        document.querySelectorAll('.nav-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelector('.nav-links').classList.remove('active');
+            });
+        });
+
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.background = 'linear-gradient(90deg, #5db9cc 0%, #4fa8bb 25%, #3d9dae 50%, #67c9a5 75%, #5fc299 100%)';
+            }
+        });
+    </script>
+</body>
+</html>
