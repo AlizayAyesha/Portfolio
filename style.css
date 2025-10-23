@@ -733,7 +733,8 @@ section {
     
     font-size: 32px; font-optical-sizing: auto;
 
-}/* Services Section Styling */
+}
+/* Services Section Styling */
 .services-section {
     padding: 100px 20px; /* Increased padding for spacing */
     background: linear-gradient(135deg, #3aafff9c, #ffffff); /* Gradient background */
@@ -791,6 +792,22 @@ section {
         align-items: center;
     }
 }
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    .services-title {
+        font-size: 2rem;
+    }
+
+    .service-box h4 {
+        font-size: 1.1rem;
+    }
+
+    .service-box p {
+        font-size: 0.95rem;
+    }
+}
+
 .service-box:nth-child(1) { background: linear-gradient(135deg, #48eaff, #0d1b2a); } /* Cyan -> Dark blue */
 .service-box:nth-child(2) { background: linear-gradient(135deg, #55e7ec, #0077b6); } /* Light cyan -> Blue */
 .service-box:nth-child(3) { background: linear-gradient(135deg, #8e2de2, #4a00e0); } /* Purple gradient */
