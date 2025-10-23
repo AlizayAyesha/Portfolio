@@ -805,6 +805,8 @@ section {
     
     font-size: 32px; font-optical-sizing: auto;
 
+}
+/* Services Section Styling */
 }/* Services Section Styling */
 .services-section {
     padding: 100px 20px; /* Increased padding for spacing */
@@ -950,6 +952,37 @@ section {
         align-items: center;
     }
 }
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    .services-title {
+        font-size: 2rem;
+    }
+
+    .service-box h4 {
+        font-size: 1.1rem;
+    }
+
+    .service-box p {
+        font-size: 0.95rem;
+    }
+}
+.service-box:nth-child(1) { background: linear-gradient(135deg, #48eaff, #0d1b2a); } /* Cyan -> Dark blue */
+.service-box:nth-child(2) { background: linear-gradient(135deg, #55e7ec, #0077b6); } /* Light cyan -> Blue */
+.service-box:nth-child(3) { background: linear-gradient(135deg, #8e2de2, #4a00e0); } /* Purple gradient */
+.service-box:nth-child(4) { background: linear-gradient(135deg, #ff6ec7, #ff99c8); } /* Soft pink */
+.service-box:nth-child(5) { background: linear-gradient(135deg, #00c6ff, #0072ff); } /* Sky blue -> Darker blue */
+.service-box:nth-child(6) { background: linear-gradient(135deg, #00fff7, #48eaff); } /* Neon cyan gradient */
+.service-box:nth-child(7) { background: linear-gradient(135deg, #56ab2f, #a8e063); } /* Keep subtle green */
+.service-box:nth-child(8) { background: linear-gradient(135deg, #e0e0ff, #a8a8ff); } /* Soft pastel purple/light blue */
+
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 35px rgba(72, 234, 255, 0.7); /* Neon cyan glow */
+}
+
+
+
 .service-box:nth-child(1) { background: linear-gradient(135deg, #48eaff, #0d1b2a); } /* Cyan -> Dark blue */
 .service-box:nth-child(2) { background: linear-gradient(135deg, #55e7ec, #0077b6); } /* Light cyan -> Blue */
 .service-box:nth-child(3) { background: linear-gradient(135deg, #8e2de2, #4a00e0); } /* Purple gradient */
