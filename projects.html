@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="scroll-behavior: smooth;  height: auto;">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,8 +24,8 @@
             </div>
         </div>
         
-        <i class="fa-solid fa-bars hamburger" style="z-index: 10;" onclick="toggleMenu()"></i>
-        <div class="dropdown" style="z-index: 10;  ">
+        <i class="fa-solid fa-bars hamburger projects-hamburger" onclick="toggleMenu()"></i>
+        <div class="dropdown">
             <div class="links">
                 <a href="index.html">Home</a>
                 <a href="index.html#about">About Me</a>
@@ -36,8 +36,8 @@
             </div>
         </div>
     </nav>
-    <section style="margin-top: 0%; z-index: -1;"  id="projects-gallery">
-        <h2 style="font-size: 5rem;"> All Projects</h2>
+    <section id="projects-gallery" class="all-projects">
+        <h2 class="all-projects-title"> All Projects</h2>
         <div class="gallery-grid" >
     <div class="gallery-item">
         <img src="parallax.png" alt="Another project">
@@ -257,11 +257,10 @@
         <a href='https://codepen.io/Alizay-Yousfzai/full/RwzyWgZ' class="view-project-btn">View Project</a>
     </div></div>
 </div>
-<div style="margin-top: 5% ;">
-<button style="display: flex; justify-content: center; text-decoration: none;"><a href="https://github.com/AlizayAyesha" target="_blank" class="see-all-btn">See More Projects</a></button>
+<div class="see-more-container">
+<button class="see-more-btn"><a href="https://github.com/AlizayAyesha" target="_blank" class="see-all-btn">See More Projects</a></button>
 </div>
 </section>
-<div class="space"></div>
 <div class="footer-container">
     <svg class="footer-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#3affff9c" fill-opacity="1" d="M0,224L48,234.7C96,245,192,267,288,250.7C384,235,480,181,576,149.3C672,117,768,107,864,128C960,149,1056,203,1152,186.7C1248,171,1344,85,1392,42.7L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
@@ -279,35 +278,3 @@
 </script>
 </body>
 </html>
-<style>
-    /* Default for larger screens */
-.space {
-    margin-top: 350vh;
-}
-
-/* Adjust for tablets */
-@media (max-width: 768px) {
-    .space {
-        margin-top: 1200vh; /* Adjust this value as needed */
-    }
-}
-/* Adjust for small mobile screens */
-@media (max-width: 480px) {
-    .space {
-        margin-top: 1500vh; /* Adjust this value as needed */
-    }
-}
-
-/* Extra small mobile screens */
-@media (max-width: 360px) {
-    .space {
-        margin-top: 1500vh; /* Adjust this value as needed */
-    }
-}
-
-@media (max-width: 380px) {
-    .space {
-        margin-top: 1800vh; /* Adjust this value as needed */
-    }}
-    
-</style>

@@ -230,6 +230,7 @@
     </div>
 </section>
 
+
         
         <section id="skills" class="skills-section" style="color: #fff; ">
             <h2>My Skills</h2>
@@ -274,9 +275,17 @@
             <div class="container">
                 <h2 class="blog-title">Blog Spot</h2>
                 <p class="blog-description">
-                    I share my thoughts and insights on web development, design, and AI on Medium. From tutorials to personal stories, I cover a range of topics that inspire and inform. Dive into my latest articles and join me on this journey of learning and sharing.
+                    I share my thoughts and insights on web development, design, and AI on Medium. From tutorials to personal stories, 
+                    I cover a range of topics that inspire and inform. Dive into my latest articles and join me on this journey of learning and sharing.
                 </p>
-                <a href="https://medium.com/@Alizay_Yousfzai" target="_blank" class="blog-link">Read My Articles on Medium</a>
+                <a href="https://medium.com/@Alizay_Ayesha" target="_blank" class="blog-link">Read My Articles on Medium</a>
+                <p class="blog-description">
+                    Discover the Future of Luxury Living and Smart Investment in Dubai. 
+                    <br>From the timeless elegance of Trump Tower Jeddah to the refined comfort of Azizi Milan,
+                     each project tells a story of ambition, design, and opportunity.
+                        Explore the latest insights, discover Dubai’s most promising developments, and see why now is the time to invest in the city that never stops reinventing luxury.
+                </p>
+                <a href="https://luxurydubairealestate.blogspot.com/?m=1" target="_blank" class="blog-link" >Discover Luxury Properties in Dubai</a>
             </div>
         </section>
         
@@ -381,24 +390,46 @@
                     <a href='https://alizayayesha.github.io/Interactive-Website/' class="view-project-btn">View Project</a>
                 </div>
                 </div>
-               <button style="display: flex; justify-content: center; text-decoration: none; margin-bottom:100px"><a href="projects.html" class="see-all-btn">See All Projects</a>
+               <button style="display: flex; justify-content: center; text-decoration: none; margin-bottom:300px"><a href="projects.html" class="see-all-btn">See All Projects</a>
             </button> </section>
             
         <div class="space" style="margin-top: 150vh; ">
 
-        <div class="footer-container">
-            <svg class="footer-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#3affff9c" fill-opacity="1" d="M0,224L48,234.7C96,245,192,267,288,250.7C384,235,480,181,576,149.3C672,117,768,107,864,128C960,149,1056,203,1152,186.7C1248,171,1344,85,1392,42.7L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-            </svg>
-            <footer>
-                <p>&copy; 2024 All Rights Reserved</p>
-                <p>Designed by Alizay Ayesha</p>
-            </footer>
+       <!-- Footer Section -->
+<div class="footer-container relative">
+    <!-- SVG Wave -->
+    <svg class="footer-wave w-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#3affff9c" fill-opacity="1" d="M0,224L48,234.7C96,245,192,267,288,250.7C384,235,480,181,576,149.3C672,117,768,107,864,128C960,149,1056,203,1152,186.7C1248,171,1344,85,1392,42.7L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+
+    <!-- Footer Content -->
+    <footer class="bg-gray-900 text-white text-center py-10 relative -mt-20">
+        <p class="text-lg font-semibold">&copy; <span id="current-year"></span> All Rights Reserved</p>
+        <p class="mt-2 text-sm text-gray-400">Designed by <span class="font-medium text-indigo-400">Alizay Ayesha</span></p>
+        <div class="flex justify-center mt-4 space-x-4">
+            <a href="https://www.linkedin.com/in/alizay-ayeshaa" target="_blank" class="hover:text-indigo-400 transition">
+                <i class="fab fa-linkedin fa-lg"></i>
+            </a>
+            <a href="https://github.com/AlizayAyesha" target="_blank" class="hover:text-indigo-400 transition">
+                <i class="fab fa-github fa-lg"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" class="hover:text-indigo-400 transition">
+                <i class="fab fa-facebook fa-lg"></i>
+            </a>
         </div>
+    </footer>
+</div>
+
+
+
+
         
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+        
+  // Set the current year dynamically
+  document.getElementById("current-year").textContent = new Date().getFullYear();
       AOS.init({offset:0});
     </script>
 </body>
