@@ -1,3 +1,4 @@
+
 /* Reset and global styles */
 * {
     padding: 0;
@@ -854,10 +855,14 @@ section {
     font-size: 0.95rem;
     color: #333;
     line-height: 1.5;
+}
+
+/* Flower Card */
 .flower-card p span {
     color: #48eaff;
     font-weight: 600;
 }
+
 /* Services Section - Modern Card Layout */
 .services-section {
     padding: 100px 5%;
@@ -1891,3 +1896,63 @@ a {
         width: 100%;
     }
 }
+/* ✨ Testimonials Section Styling - matching site theme */
+.testimonials {
+  background: linear-gradient(145deg, #0a0f24, #101c38);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.testimonials .heading {
+  font-size: 2.5rem;
+  color: #00e0ff;
+  margin-bottom: 100px; /* increased space between heading and first card */
+  position: relative;
+}
+.testimonials-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  width: 320px;
+  padding: 25px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(12px);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+}
+
+.testimonial-content h3 {
+  color: #00e0ff;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.testimonial-content .rating {
+  color: gold;
+  margin-bottom: 15px;
+}
+
+.testimonial-content p {
+  font-size: 1rem;
+  color: #e5e5e5;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.author {
+  color: #aaa;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
