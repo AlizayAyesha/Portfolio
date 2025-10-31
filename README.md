@@ -37,9 +37,10 @@ This option is recommended for testing, as it allows automatic reloading when yo
 
 ## 💡 Features
 
-- Responsive portfolio design
-- Sections for projects, skills, and contact information
-- Simple setup and easy customization
+* **Fully Responsive Design:** The layout adapts seamlessly to all screen sizes (desktop, tablet, and mobile).
+* **Project Showcase:** A dedicated section to highlight key projects with detailed descriptions and links.
+* **Skills Matrix:** A clear, organized display of technical skills and expertise.
+* **Clean, Professional UI/UX:** Designed for ease of navigation and a strong first impression.
 
 ---
 
